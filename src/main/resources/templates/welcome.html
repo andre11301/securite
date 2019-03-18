@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>welcome</title>
+</head>
+<body>
+        <h1>Welcome</h1>
+        <h2><a th:href="@{/login}">login</a></h2>
+
+
+        <h3>level1</h3>
+        <u1>
+            <li><a th:href="@{level1/1}">level11</a></li>
+            <li><a th:href="@{level1/2}">level12</a></li>
+        </u1>
+
+        <h3>level2</h3>
+        <u1>
+            <li><a th:href="@{level2/1}">level21</a></li>
+            <li><a th:href="@{level2/2}">level22</a></li>
+        </u1>
+
+        <h3>level3</h3>
+        <u1>
+            <li><a th:href="@{level2/1}">level31</a></li>
+            <li><a th:href="@{level2/2}">level32</a></li>
+        </u1>
+
+
+
+
+</body>
+</html>

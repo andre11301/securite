@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>LOGIN</title>
+    <!--<link rel="stylesheet" type="text/css" th:href="@{/static/css/login.css}" />-->
+</head>
+<body>
+<div class="login1">
+    <h1> Welcome to system</h1>
+    <form th:action="@{/login}" method="post">
+        <div>
+            <!--/*@thymesVar id="error" type=""*/-->
+            <span id="error">&nbsp;</span>
+            <span style="font-size: 12px;color: red" th:text="${error}" ></span>
+            <br />
+        </div>
+        <div>
+            <span>Username</span>
+            <input id="user_name" name="username" type="text" th:placeholder="username" required/>
+        </div>
+        <br />
+        <div>
+            <span>Password:</span>
+            <input id="pass_word" name="password" type="password"  th:placeholder="password" required/>
+        </div>
+        <br/>
+        <button type="submit" style="width:190px;" th:text="login">Login</button>
+
+    </form>
+</div>
+</body>
+</html>
