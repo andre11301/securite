@@ -31,7 +31,7 @@ public class AuthenticationSuccessHandler extends SavedRequestAwareAuthenticatio
             // 1,retourner en format json
 //            httpServletResponse.setContentType("application/json;charset=UTF-8");
 //            httpServletResponse.getWriter().write(objectMapper.writeValueAsString(authentication));
-       //2,retourner en route original
+       //2,retourner en route original for test
         super.onAuthenticationSuccess(httpServletRequest,httpServletResponse,authentication);
 
     }
